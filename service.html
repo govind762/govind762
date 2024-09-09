@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Info</title>
+    <link rel="stylesheet" href="servise.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <div class="logo">
+                    <li><a href="index.html"><img src="img/logo1.webp"></a></li>
+                </div>
+                <li><a href="#">New Lauches</a></li>
+                <li><a href="service.html">Service info</a></li>
+                <li><a href="#">Appoinement for Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="servise">
+        <img src="img/bajaj-re-cng-auto-rickshaw.png">
+        <div class="servise-info">
+            <h1>Three Free Servise(All Three Weeler)*</h1>
+            <h2>First Free Servise*[1000km-1500km]</h2>
+            <p>will get free oil and washing
+                no labour charge*
+            </p>
+            <h2> SecondFree Servise*[5000km-5500]</h2>
+            <p>will get oil top up</p>
+            <h2>Third Free Servise*[9000km-10500km]</h2>
+            <p>will get oil change and gear oil and oil fiter and washing</p>
+            <p>Note: <samp>You have to claim the servises within time period* or km*</samp></p>
+            <h3>Conteact for Appoinement:</h3><br>
+            <h4>022-987854785/7878547847</h4>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/bajaj-re-cng-auto-rickshaw.png"></div>
+                <div class="swiper-slide"><img src="img/cng-bajaj-re-compact-auto-rickshaw-500x500.webp"></div>
+                <div class="swiper-slide"><img src="img/ev-re-explore.png"></div>
+                <div class="swiper-slide"><img src="img/bajaj-maxima-yellow-cargo-cng-auto-500x500.webp"></div>
+
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                dealy: 3000,
+                disableOnIntractraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });          
+    </script>
+</body>
+
+</html>
